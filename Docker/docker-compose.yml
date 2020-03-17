@@ -18,6 +18,7 @@ services:
     container_name: teampass
     restart: always
     environment:
+      # · sudo echo "127.0.0.1 teampass.example.com" >> /etc/hosts (for testing the application locally)
       VIRTUAL_HOST: teampass.example.com
     networks:
       - frontend
